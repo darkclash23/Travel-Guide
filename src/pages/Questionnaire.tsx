@@ -1,6 +1,16 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Mountain, Umbrella, Building2, TreePine, Users, User, Sparkles, Heart, Camera } from "lucide-react";
+import {
+  Mountain,
+  Umbrella,
+  Building2,
+  TreePine,
+  Users,
+  User,
+  Sparkles,
+  Heart,
+  Camera
+} from "lucide-react";
 
 export default function Questionnaire() {
   const navigate = useNavigate();
