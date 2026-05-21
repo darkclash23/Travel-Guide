@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
+
+.popular-section {
+  width: 100%;
+
+  background: white;
+
+  padding: 90px 5%;
+
+  margin-top: 20px;
+
+  position: relative;
+
+  font-family: 'Outfit', sans-serif;
+}
+
+/* TOP CURVE */
+
+.popular-section::before {
+  content: "";
+
+  position: absolute;
+
+  top: -70px;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 140px;
+
+  background: white;
+
+  border-top-left-radius: 50px;
+
+  border-top-right-radius: 50px;
+}
+
+/* SECTION HEADER */
+
+.section-header {
+  text-align: center;
+
+  margin-bottom: 80px;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+.small-title {
+  color: #1575FF;
+
+  font-size: 0.95rem;
+
+  font-weight: 700;
+
+  letter-spacing: 5px;
+
+  margin-bottom: 18px;
+}
+
+.section-header h1 {
+  font-size: 4rem;
+
+  color: #111827;
+
+  font-weight: 800;
+
+  margin-bottom: 20px;
+
+  letter-spacing: -2px;
+}
+
+.section-description {
+  color: #6b7280;
+
+  font-size: 1.1rem;
+}
+
+/* GRID */
+
+.destination-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 40px;
+
+  max-width: 1450px;
+
+  margin: auto;
+}
+
+/* CARD */
+
+.destination-card {
+  background: white;
+
+  border-radius: 28px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+
+  transition: 0.4s ease;
+
+  cursor: pointer;
+}
+
+.destination-card:hover {
+  transform: translateY(-10px);
+}
+
+/* IMAGE */
+
+.destination-image {
+  height: 360px;
+
+  background-size: cover;
+
+  background-position: center;
+
+  position: relative;
+}
+
+/* SAVE BUTTON */
+
+.save-btn {
+  position: absolute;
+
+  top: 18px;
+
+  right: 18px;
+
+  width: 48px;
+
+  height: 48px;
+
+  border-radius: 50%;
+
+  border: none;
+
+  background: rgba(255,255,255,0.2);
+
+  backdrop-filter: blur(10px);
+
+  color: white;
+
+  font-size: 1rem;
+
+  cursor: pointer;
+}
+
+/* CONTENT */
+
+.destination-content {
+  padding: 30px;
+}
+
+.top-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 18px;
+}
+
+.top-row h2 {
+  font-size: 1.8rem;
+
+  color: #111827;
+
+  font-weight: 700;
+}
+
+/* RATING */
+
+.rating {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  color: #F5AA14;
+
+  font-weight: 700;
+}
+
+/* LOCATION */
+
+.location {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 15px;
+
+  color: #6b7280;
+
+  font-size: 1rem;
+}
+
+/* WEATHER */
+
+.weather {
+  color: #1575FF;
+
+  font-weight: 600;
+
+  font-size: 1rem;
+}

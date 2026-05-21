@@ -1,0 +1,345 @@
+.finder-section {
+
+  padding: 110px 8%;
+
+  background: #f8fafc;
+}
+
+/* HEADING */
+
+.finder-heading {
+
+  text-align: center;
+
+  margin-bottom: 70px;
+}
+
+.finder-heading span {
+
+  color: #1575FF;
+
+  font-size: 0.9rem;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.finder-heading h2 {
+
+  font-size: 3.4rem;
+
+  color: #111827;
+
+  margin-top: 18px;
+
+  margin-bottom: 20px;
+}
+
+.finder-heading p {
+
+  max-width: 760px;
+
+  margin: auto;
+
+  color: #6b7280;
+
+  font-size: 1.05rem;
+
+  line-height: 1.8;
+}
+
+/* INFO */
+
+.finder-info {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap: 22px;
+
+  margin-top: 55px;
+}
+
+.info-card {
+
+  background: white;
+
+  border: 1px solid #edf2f7;
+
+  border-radius: 24px;
+
+  padding: 30px;
+
+  text-align: left;
+
+  transition: 0.3s ease;
+}
+
+.info-card:hover {
+
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 18px 40px rgba(0,0,0,0.06);
+}
+
+.info-card h4 {
+
+  font-size: 1.1rem;
+
+  color: #111827;
+
+  margin-bottom: 14px;
+}
+
+.info-card p {
+
+  color: #6b7280;
+
+  line-height: 1.7;
+
+  font-size: 0.96rem;
+}
+
+/* BOX */
+
+.finder-box {
+
+  background: white;
+
+  border-radius: 38px;
+
+  padding: 55px;
+
+  box-shadow:
+    0 20px 70px rgba(0,0,0,0.08);
+}
+
+/* GROUP */
+
+.finder-group {
+
+  margin-bottom: 55px;
+}
+
+.finder-group h3 {
+
+  font-size: 1.3rem;
+
+  color: #111827;
+
+  margin-bottom: 24px;
+}
+
+/* DESTINATION CARDS */
+
+.destination-cards {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4,1fr);
+
+  gap: 22px;
+}
+
+.destination-option {
+
+  position: relative;
+
+  height: 260px;
+
+  border-radius: 28px;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  transition: 0.35s ease;
+}
+
+.destination-option img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.destination-overlay {
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0,0,0,0.7),
+      transparent
+    );
+
+  display: flex;
+
+  align-items: flex-end;
+
+  padding: 24px;
+}
+
+.destination-overlay h4 {
+
+  color: white;
+
+  font-size: 1.3rem;
+
+  font-weight: 700;
+}
+
+.destination-option:hover {
+
+  transform:
+    translateY(-8px)
+    scale(1.02);
+}
+
+/* SELECTED */
+
+.selected-card {
+
+  outline: 4px solid #1575FF;
+
+  box-shadow:
+    0 18px 40px rgba(21,117,255,0.3);
+}
+
+/* OPTIONS */
+
+.finder-options {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 16px;
+}
+
+.finder-options button {
+
+  padding: 15px 26px;
+
+  border-radius: 100px;
+
+  border: 1px solid #dbe4ee;
+
+  background: white;
+
+  font-size: 0.95rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.finder-options button:hover {
+
+  border-color: #1575FF;
+
+  color: #1575FF;
+}
+
+/* ACTIVE */
+
+.finder-options .active {
+
+  background:
+    linear-gradient(
+      135deg,
+      #1575FF,
+      #4F9BFF
+    );
+
+  color: white;
+
+  border: none;
+
+  box-shadow:
+    0 12px 30px rgba(21,117,255,0.25);
+}
+
+/* SEARCH AREA */
+
+.finder-search-area {
+
+  margin-top: 80px;
+
+  text-align: center;
+
+  padding-top: 50px;
+
+  border-top:
+    1px solid #edf2f7;
+}
+
+.finder-search-area h2 {
+
+  font-size: 2.5rem;
+
+  color: #111827;
+
+  margin-bottom: 18px;
+}
+
+.finder-search-area p {
+
+  color: #6b7280;
+
+  font-size: 1.05rem;
+
+  margin-bottom: 35px;
+}
+
+/* SEARCH BUTTON */
+
+.finder-search-btn {
+
+  width: 320px;
+
+  height: 72px;
+
+  border: none;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1575FF,
+      #4F9BFF
+    );
+
+  color: white;
+
+  font-size: 1.1rem;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.35s ease;
+
+  box-shadow:
+    0 18px 40px rgba(21,117,255,0.25);
+}
+
+.finder-search-btn:hover {
+
+  transform:
+    translateY(-4px)
+    scale(1.02);
+}

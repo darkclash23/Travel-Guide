@@ -1,0 +1,80 @@
+.loading-overlay {
+
+  position: fixed;
+
+  inset: 0;
+
+  background:
+    rgba(10,15,25,0.75);
+
+  backdrop-filter: blur(10px);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  z-index: 999999;
+}
+
+.loading-box {
+
+  width: 420px;
+
+  background: white;
+
+  border-radius: 30px;
+
+  padding: 50px;
+
+  text-align: center;
+
+  box-shadow:
+    0 20px 70px rgba(0,0,0,0.2);
+}
+
+/* SPINNER */
+
+.loading-spinner {
+
+  width: 80px;
+
+  height: 80px;
+
+  border-radius: 50%;
+
+  border: 7px solid #dbeafe;
+
+  border-top-color: #1575FF;
+
+  margin: auto;
+
+  animation:
+    spin 1s linear infinite;
+}
+
+@keyframes spin {
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-box h2 {
+
+  margin-top: 35px;
+
+  font-size: 1.8rem;
+
+  color: #111827;
+}
+
+.loading-box p {
+
+  margin-top: 14px;
+
+  color: #6b7280;
+
+  line-height: 1.7;
+}

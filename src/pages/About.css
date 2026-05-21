@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
+
+.about-page {
+  width: 100%;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff,
+      #f7fbff
+    );
+
+  padding: 120px 5%;
+
+  font-family: 'Outfit', sans-serif;
+}
+
+/* HERO */
+
+.about-hero {
+  width: 100%;
+
+  height: 500px;
+
+  border-radius: 34px;
+
+  overflow: hidden;
+
+  position: relative;
+
+  background-image:
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1974");
+
+  background-size: cover;
+
+  background-position: center;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  margin-bottom: 100px;
+}
+
+.about-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.55),
+      rgba(0,0,0,0.55)
+    );
+}
+
+.about-hero-content {
+  position: relative;
+
+  z-index: 2;
+}
+
+.about-hero-content p {
+  color: #f4b942;
+
+  letter-spacing: 4px;
+
+  font-weight: 700;
+
+  margin-bottom: 20px;
+}
+
+.about-hero-content h1 {
+  font-size: 5rem;
+
+  line-height: 1.05;
+
+  color: white;
+
+  letter-spacing: -3px;
+}
+
+/* MAIN SECTION */
+
+.about-container {
+  display: flex;
+
+  align-items: center;
+
+  gap: 70px;
+
+  margin-bottom: 100px;
+}
+
+/* IMAGE */
+
+.about-image {
+  flex: 1;
+
+  height: 650px;
+
+  border-radius: 30px;
+
+  background-image:
+    url("https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=1974");
+
+  background-size: cover;
+
+  background-position: center;
+
+  box-shadow:
+    0 18px 45px rgba(0,0,0,0.12);
+}
+
+/* CONTENT */
+
+.about-content {
+  flex: 1;
+}
+
+.about-tag {
+  display: inline-block;
+
+  color: #1575FF;
+
+  font-size: 0.95rem;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 18px;
+}
+
+.about-content h2 {
+  font-size: 3.6rem;
+
+  line-height: 1.1;
+
+  color: #111827;
+
+  margin-bottom: 28px;
+
+  letter-spacing: -2px;
+}
+
+.about-content p {
+  color: #4b5563;
+
+  font-size: 1.08rem;
+
+  line-height: 2;
+
+  margin-bottom: 24px;
+}
+
+/* STATS */
+
+.about-stats {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 35px;
+}
+
+.about-stat-card {
+  background: white;
+
+  padding: 35px 55px;
+
+  border-radius: 24px;
+
+  text-align: center;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.06);
+
+  min-width: 240px;
+
+  transition: 0.3s ease;
+}
+
+.about-stat-card:hover {
+  transform: translateY(-8px);
+}
+
+.about-stat-card h2 {
+  font-size: 3rem;
+
+  color: #1575FF;
+
+  margin-bottom: 10px;
+}
+
+.about-stat-card span {
+  color: #6b7280;
+}

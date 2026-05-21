@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
+
+.why-section {
+  width: 100%;
+
+  padding: 70px 5%;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff,
+      #f5f9ff
+    );
+
+  position: relative;
+
+  overflow: hidden;
+
+  font-family: 'Outfit', sans-serif;
+}
+
+/* LIGHT BACKGROUND GLOW */
+
+.why-section::before {
+  content: "";
+
+  position: absolute;
+
+  width: 400px;
+
+  height: 400px;
+
+  background: rgba(21,117,255,0.06);
+
+  border-radius: 50%;
+
+  top: -120px;
+
+  right: -120px;
+
+  filter: blur(80px);
+}
+
+/* HEADER */
+
+.why-header {
+  text-align: center;
+
+  margin-bottom: 70px;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+.why-small-title {
+  color: #1575FF;
+
+  font-size: 0.95rem;
+
+  font-weight: 700;
+
+  letter-spacing: 5px;
+
+  margin-bottom: 18px;
+}
+
+.why-header h1 {
+  font-size: 4rem;
+
+  line-height: 1.15;
+
+  color: #111827;
+
+  font-weight: 800;
+
+  letter-spacing: -2px;
+}
+
+/* GRID */
+
+.why-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 35px;
+
+  max-width: 1500px;
+
+  margin: auto;
+
+  position: relative;
+
+  z-index: 2;
+
+  align-items: start;
+}
+
+/* CARD */
+
+.why-card {
+  background: white;
+
+  padding: 45px 38px;
+
+  border-radius: 28px;
+
+  transition: 0.35s ease;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.06);
+
+  border: 1px solid rgba(0,0,0,0.04);
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+/* DIFFERENT CARD HEIGHT POSITIONS */
+
+.why-card:nth-child(2) {
+  margin-top: 40px;
+}
+
+.why-card:nth-child(3) {
+  margin-top: 80px;
+}
+
+/* HOVER */
+
+.why-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow:
+    0 18px 40px rgba(21,117,255,0.12);
+}
+
+/* TOP LINE */
+
+.why-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 5px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #1575FF,
+      #57a2ff
+    );
+}
+
+/* ICON */
+
+.why-icon {
+  width: 80px;
+
+  height: 80px;
+
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1575FF,
+      #57a2ff
+    );
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: white;
+
+  font-size: 2rem;
+
+  margin-bottom: 28px;
+
+  box-shadow:
+    0 14px 30px rgba(21,117,255,0.22);
+}
+
+/* TITLE */
+
+.why-card h2 {
+  font-size: 1.8rem;
+
+  color: #111827;
+
+  margin-bottom: 18px;
+
+  font-weight: 700;
+}
+
+/* TEXT */
+
+.why-card p {
+  color: #6b7280;
+
+  line-height: 1.9;
+
+  font-size: 1rem;
+}

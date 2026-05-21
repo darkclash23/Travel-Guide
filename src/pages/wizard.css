@@ -1,0 +1,89 @@
+/* Background — animated gradient */
+.wizard-bg {
+  background: linear-gradient(135deg, #1e3c72, #2a5298, #6dd5fa);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Glassmorphic card */
+.wizard-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Pretty option buttons */
+.wizard-option {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.17);
+  border-radius: 18px;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  backdrop-filter: blur(10px);
+  transition: 0.25s ease;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.wizard-option:hover {
+  transform: translateY(-4px) scale(1.03);
+  background: rgba(255, 255, 255, 0.27);
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.35);
+}
+
+/* Icons inside options */
+.wizard-icon {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+/* Text inside options */
+.wizard-text {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+/* Animations */
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Buttons */
+.wizard-back {
+  color: white;
+  opacity: 0.8;
+  font-size: 16px;
+}
+
+.wizard-back:hover {
+  opacity: 1;
+}
+
+.wizard-finish {
+  background: linear-gradient(135deg, #fcd34d, #fbbf24);
+  padding: 12px 25px;
+  border-radius: 12px;
+  color: #2a2a2a;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 0 0 15px rgba(255, 213, 79, 0.6);
+  transition: 0.3s;
+}
+
+.wizard-finish:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 22px rgba(255, 213, 79, 0.8);
+}
